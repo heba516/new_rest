@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css.map">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container text-center">
+            <div class="row pt-3 pb-3 align-items-center">
+                <div class="logo col-sm-12 col-lg-5">
+
+                    <h2 class="mb-0"><a href="/home.html"><i class="fa-solid fa-utensils me-2"></i>Restoran</a></h2>
+
+                </div>
+                <div class="nav_list col-sm-12 col-lg-6">
+                    <ul class="d-flex align-items-center justify-content-between mb-0 ps-0">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/menu" id="menuLink">Menu</a></li>
+                        <li><a href="/dashboard" id="dashboardLink">Dashboard</a></li>
+                        <li><a class="chat">Chat</a>
+                            <ul class="chat-toggle d-none">
+                                <li><a href="/chat" data-room="1">Staff Chat</a></li>
+                                <li><a href="/chat" data-room="2">Client Chat</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/book" id="bookLink">Book</a></li>
+                        <li><a class="logout" id="logout"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container home text-center">
+        <div class="row align-items-center p-3 flex-column-reverse flex-lg-row">
+            <div class="col-sm-12 col-md-10 col-lg-6">
+                <h1>
+                    Enjoy our delicious meal
+                </h1>
+                <p>tempor erat elitr rebum at clita. diam dolor diam ipsum sit. aliqu diam amet diam et eos. clita erat
+                    ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <a class="book" href="/book" id="bookTableBtn">Book Table</a>
+                <a class="login ms-2" id="loginButton" href="/login">Login</a>
+                <span id="welcomeMessage" class="hello mt-4">Hello, <span id="userName"></span></span>
+            </div>
+            <div class="col-sm-12 col-md-10 col-lg-6 mb-4 mb-lg-0 hero-img">
+                <img src="images/hero.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
