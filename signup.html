@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" href="images/hero.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css.map">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <script src="JS/axios.min.js"></script>
+    <script src="JS/register.js"></script>
+</head>
+
+<body>
+
+    <div class="container form_container text-center mt-5">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="mb-0"><a href="/home.html"><i class="fa-solid fa-utensils me-2"></i>Restoran</a></h2>
+            </div>
+        </div>
+        <form id="signup-form" method="POST">
+            <div class="row form mt-4 p-4 mx-auto">
+                <div class="col-sm-12">
+                    <h3>Register</h3>
+                    <div class="form-floating mb-2 mt-4">
+                        <input type="text" class="form-control" id="name" placeholder="Full Name">
+                        <label for="floatingInput">Full Name</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                        <input type="text" class="form-control" id="address" placeholder="address">
+                        <label for="address">Password</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                        <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                        <label for="gender">Gender</label>
+                    </div>
+                    <div class="form-check d-flex justify-content-around">
+                        <div class="male">
+                            <input type="radio" class="form-check-input" id="male" name="flexRadioDefault" value="male">
+                            <label class="label1" for="male">Male</label>
+                        </div>
+                        <div class="female">
+                            <input type="radio" class="form-check-input" id="female" name="flexRadioDefault"
+                                value="female">
+                            <label class="label1" for="female">Female</label>
+                        </div>
+                    </div>
+                    <p class="error"></p>
+                </div>
+                <div class="button col-sm-12 mt-2">
+                    <input type="submit" class="me-md-5" name="Register" value="Register">
+                    <input type="reset" name="Reset" value="Reset">
+                </div>
+            </div>
+
+        </form>
+</body>
+
+</html>

@@ -9,7 +9,7 @@
 
 :root {
     --primary: #FEA116;
-    --light: #F1F8FF;
+    --light: #cdcdd6;
     --dark: #0F172B;
 }
 
@@ -36,16 +36,15 @@ a:hover {
 img {
     max-width: 95%;
 }
-
+h2 a{
+    text-transform: uppercase;
+    color: var(--primary);
+}
 
 
 nav {
     background-color: var(--dark);
     
-}
-nav h2 a{
-    text-transform: uppercase;
-    color: var(--primary);
 }
 nav ul li a{
     color: var(--light);
@@ -116,4 +115,50 @@ nav ul li a{
         -ms-transform: rotate(360deg);
         -o-transform: rotate(360deg);
 }
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+.form {
+    width: fit-content;
+    background-color: var(--light);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.form h3 {
+    content: var(--dark);
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.form_container h2 a {
+    font-size: 45px;
+}
+.form-control {
+    border: none !important;
+}
+.button input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary);
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    color: var(--light);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.reg-link {
+    font-size: 20px;
+}
+.reg-link a {
+    text-decoration: underline !important;
 }
