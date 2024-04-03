@@ -36,13 +36,16 @@ a:hover {
 img {
     max-width: 95%;
 }
+textarea {
+    resize: none !important;
+}
 h2 a{
     text-transform: uppercase;
     color: var(--primary);
 }
 
 
-nav {
+.colored_nav {
     background-color: var(--dark);
     
 }
@@ -162,3 +165,25 @@ nav ul li a{
 .reg-link a {
     text-decoration: underline !important;
 }
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+.menu_nav {
+    height: 40vh;
+}
+.menu_nav h1 {
+    color: var(--light);
+    font-size: 60px;
+    font-weight: 900;
+    margin: auto;
+}
+
+.menu {
+    background-color: var(--light);
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
