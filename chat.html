@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restoran</title>
+    <title>Chat</title>
     <link rel="icon" href="images/hero.png">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/all.min.css">
@@ -15,16 +15,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
         rel="stylesheet">
+    <script src="JS/axios.min.js"></script>
+    <script src="JS/login.js"></script>
 </head>
 
-<body class="bg-img">
-    <nav class="bg_color">
+<body class="bg_color chat">
+    <nav class="bg_color border-bottom">
         <div class="container">
-            <div class="row pt-3 pb-3 align-items-center justify-content-between">
+            <div class="row pt-3 pb-2 align-items-center justify-content-between">
                 <div class="logo col-sm-12 col-lg-5 text-start">
-
                     <h2 class="mb-0"><a href="/home.html"><i class="fa-solid fa-utensils me-2"></i>Restoran</a></h2>
-
                 </div>
                 <div class="nav_list col-sm-12 col-lg-6">
                     <ul class="d-flex align-items-center justify-content-around mb-0 ps-0">
@@ -44,23 +44,30 @@
         </div>
     </nav>
 
-    <div class="container home text-center">
-        <div class="row align-items-center p-3 flex-column-reverse flex-lg-row">
-            <div class="col-sm-12 col-md-10 col-lg-6">
-                <h1>
-                    Enjoy our delicious meal
-                </h1>
-                <p>tempor erat elitr rebum at clita. diam dolor diam ipsum sit. aliqu diam amet diam et eos. clita erat
-                    ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                <a class="book" href="/book" id="bookTableBtn">Book Table</a>
-                <a class="login ms-2" id="loginButton" href="/login">Login</a>
-                <span id="welcomeMessage" class="hello mt-4">Hello, <span id="userName"></span></span>
-            </div>
-            <div class="col-sm-12 col-md-10 col-lg-6 mb-4 mb-lg-0 hero-img">
-                <img src="images/hero.png" alt="">
-            </div>
-        </div>
-    </div>
+    <ul id="messages" class="messages p-3"></ul>
+    <form id="form" class="p-2 pt-1" action="" method="post">
+        <input id="input" class="p-2" placeholder="Type a message..." autocomplete="off" />
+        <button id="btn" class="p-2 me-2 ms-2">Send</button>
+        <button id="disconnect-btn" class="p-2">Disconnect</button>
+    </form>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="JS/chat.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const userRole = localStorage.getItem('userRole');
+            const dashboardLink = document.getElementById('CdashboardLink');
+
+            if (userRole !== 'admin') {
+                dashboardLink.style.display = 'none';  // Hides the link and does not retain its layout space
+            }
+        });
+    </script>
+
+
+    <script src="JS/nav.js"></script>
+
 </body>
 
 </html>
