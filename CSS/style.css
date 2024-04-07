@@ -331,3 +331,52 @@ body.chat {
 #messages::-webkit-scrollbar-thumb:hover {
     background: var(--primary);
 }
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+
+.dashboard_boxes .row div, .dashboard, .db-user {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.dashboard_boxes .row p, .dashboard p {
+    margin-bottom: 0 !important;
+}
+.dashboard_boxes p {
+    font-size: 20px;
+}
+.dashboard_boxes i {
+    border-radius: 10px;
+    padding: 6px 15px;
+    background-color: #ffece4;
+    font-size: 35px;
+    color: var(--primary);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.dashboard_boxes p span {
+    font-weight: bold;
+}
+.dashboard {
+    padding: 25px !important;
+}
+.dashboard i {
+    font-size: 19px;
+    color: var(--primary);
+}
+.dashboard input {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #ffece4;
+    color: var(--primary);
+}
+
+.db-user {
+    background-color: #ffece4;
+}
