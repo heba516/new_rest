@@ -215,7 +215,7 @@ body.chat {
     height: 100vh;
 }
 .messages {
-    flex: 1;
+    height: calc(100% - 150px);
     overflow-y: scroll;
     border-bottom: 1px solid var(--separator); 
 }
