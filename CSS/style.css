@@ -220,7 +220,7 @@ body.chat {
     border-bottom: 1px solid var(--separator); 
 }
 
-.message-wrapper, .chat {
+.message-wrapper {
     display: flex;
     flex-direction: column;
 }
